@@ -1,0 +1,135 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --flag-width: 300px;
+  --flag-height: calc(var(--flag-width) / 3 * 2);
+}
+
+.flags_container {
+  width: var(--flag-width);
+  margin: 0 auto;
+}
+
+.flags_container > * {
+  margin-top: 20px;
+}
+
+.flag {
+  height: var(--flag-height);
+  width: var(--flag-width);
+  border: 1px solid black;
+}
+
+/*
+Україна.
+Відношення сторін 2:3.
+*/
+.Ukraine_blue {
+  background-color: blue;
+  height: 50%;
+}
+
+.Ukraine {
+  background-color: yellow;
+}
+/* end */
+/*
+Японія.
+Відношення сторін 2:3.
+Відношення кола до висоти 3:5.
+*/
+.japan {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.japan_circle {
+  background-color: red;
+  width: calc(var(--flag-height) * 3 / 5);
+  height: calc(var(--flag-height) * 3 / 5);
+  border-radius: 50%;
+}
+/* end */
+/*
+Ісландія.
+Відношення сторін 18:25. 
+Відношення білої полоски до ширини - 2:9.
+Відношення красної полоски до ширини - 1:9.
+*/
+.iceland {
+  height: calc(var(--flag-width) * 18 / 25);
+  background-color: darkblue;
+}
+
+.vertical_white {
+  --white-width: calc(var(--flag-width) * 2 / 9);
+  --iceland-flag-height: calc(var(--flag-width) * 18 / 25);
+  position: relative;
+  width: var(--white-width);
+  height: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  left: calc((var(--iceland-flag-height) - var(--white-width)) / 2);
+}
+
+.vertical_red {
+  width: calc(var(--flag-width) / 9);
+  height: 100%;
+  background-color: red;
+  z-index: 1;
+}
+
+.horizontal_white {
+  --white-height: calc(var(--flag-width) * 2 / 9);
+  --iceland-flag-height: calc(var(--flag-width) * 18 / 25);
+  position: relative;
+  width: 100%;
+  height: var(--white-height);
+  background-color: white;
+  display: flex;
+  align-items: center;
+  bottom: calc(
+    ((var(--iceland-flag-height) - var(--white-height)) / 2) +
+      var(--white-height)
+  );
+}
+
+.horizontal_red {
+  height: calc(var(--flag-width) / 9);
+  width: 100%;
+  background-color: red;
+}
+/* end */
+/*
+Чехія.
+Відношення сторін 2:3.
+ */
+.czech {
+  background-color: red;
+  overflow: hidden;
+}
+
+.czech_white {
+  background-color: white;
+  height: 50%;
+}
+
+.czech_blue {
+  position: relative;
+  background-color: blue;
+  width: var(--flag-height);
+  height: var(--flag-height);
+  transform: rotate(45deg);
+  bottom: calc(var(--flag-height) / 2);
+  right: calc(var(--flag-height) / 1.405);
+}
+/* end */
