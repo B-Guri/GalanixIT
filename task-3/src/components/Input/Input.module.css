@@ -1,0 +1,21 @@
+.myInput {
+  font-size: 16px;
+  padding: 5px;
+  border: 2px solid teal;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.myInput:focus {
+  border: 2px solid black;
+  outline: none;
+}
+.error .myInput {
+  border: 2px solid red;
+}
+.error .myInput:focus {
+  border: 2px solid red;
+}
+.error .myInput::placeholder {
+  color: red;
+}

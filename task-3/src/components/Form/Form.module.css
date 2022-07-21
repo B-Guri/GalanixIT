@@ -1,0 +1,65 @@
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.form_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid teal;
+  padding: 15px;
+}
+
+.buttons > * {
+  margin-left: 5px;
+}
+
+.table_content {
+  margin: 20px 0;
+}
+
+.table_content table {
+  border: 1px solid teal;
+  margin: 0 auto;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+.table_content table tr:nth-child(odd) {
+  background-color: rgba(0, 128, 128, 0.3);
+}
+
+.table_content table tr {
+  border: 1px solid teal;
+}
+.table_content table td {
+  border: 1px solid teal;
+  padding: 0 6px;
+}
+.table_content table th {
+  border: 1px solid teal;
+  padding: 0 6px;
+}
+
+.center_container {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.center_container > p {
+  font-size: 24px;
+  color: teal;
+}
+
+.saved_count {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 16px;
+  color: teal;
+  max-width: 250px;
+}
