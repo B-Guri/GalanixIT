@@ -47,7 +47,7 @@ const Photolist = () => {
   const changeTime = () => {
     let currentDate = new Date();
     setDate(
-      `${currentDate.getDay()}.${currentDate.getMonth()}.${currentDate.getFullYear()} ${currentDate.getHours()}:${currentDate.getMinutes()}`
+      `${currentDate.getDate()}.${currentDate.getMonth() + 1}.${currentDate.getFullYear()} ${currentDate.getHours()}:${currentDate.getMinutes()}`
     );
   };
 
